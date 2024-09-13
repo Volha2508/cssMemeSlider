@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>cssMemeSlider</title>
+    <link rel="stylesheet" href="./style.css" >
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div class="slider">
+            <div class="imgs_slides">
+                <input type="radio" name="radio-btn" id="radio1" />
+                <input type="radio" name="radio-btn" id="radio2" />
+                <input type="radio" name="radio-btn" id="radio3" />
+                <input type="radio" name="radio-btn" id="radio4" />
+                <div class="first slide">
+                    <img src="./img/1superhero.png" alt="superhero" />
+                    <h2 class="text1">When you need to select an element</h2>
+                </div>
+                <div class="slide">
+                    <img src="./img/2characters.png" alt="characters"/>
+                    <h2 class="text2">When someone asks which layout method is better...</h2>
+                </div>
+                <div class="slide">
+                    <img src="./img/3faces.png" alt="faces"/>
+                    <h2 class="text3">What your website looks like in different browsers.</h2>
+                </div>
+                <div class="slide">
+                    <img src="img/4wizard.png" alt="wizard" />
+                    <h2 class="text4">When you write CSS and everything starts working as it should.</h2>
+                </div>
+            </div>
+            <div class="navigation">
+                <label for="radio1" class="navigation-btn">
+                </label>
+                <label for="radio2" class="navigation-btn">
+                </label>
+                <label for="radio3" class="navigation-btn">
+                </label>
+                <label for="radio4" class="navigation-btn">
+                </label>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
