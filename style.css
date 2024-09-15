@@ -42,12 +42,12 @@ h2 {
         height: 80%;
     }
     .text {
-        margin-top: 5rem;
+        margin-top: 10vh;
     }
 }
 .navigation {
     width: 100%;
-    margin-top: -3rem;
+    margin-top: -5.5vh;
     display: flex;
     justify-content: right;
     gap: 0.5rem;
@@ -55,7 +55,7 @@ h2 {
 @media(max-width: 760px) {
     .navigation {
         justify-content: center;
-        margin-top: -5.5rem;
+        margin-top: -12.5rem;
     }
 }
 label {
