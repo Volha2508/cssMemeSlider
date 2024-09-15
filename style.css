@@ -35,12 +35,27 @@ h2 {
     width: 100%;
     height: 90%;
 }
+@media(max-width: 760px) {
+    .slide img {
+        width: 100%;
+        height: 80%;
+    }
+    .text {
+        margin-top: 5rem;
+    }
+}
 .navigation {
     width: 100%;
     margin-top: -2.3rem;
     display: flex;
     justify-content: right;
     gap: 1.5rem;
+}
+@media(max-width: 760px) {
+    .navigation {
+        justify-content: center;
+        margin-top: -5rem;
+    }
 }
 .navigation-btn {
     border: 0.125rem solid blue;
@@ -50,8 +65,7 @@ h2 {
     height: 0.75rem;
     cursor: pointer;
     outline-offset: -5px; 
-    transition: 0.5s;
-    
+    transition: 0.5s;   
 }
 .navigation-btn:hover {   
     border-color: black;
