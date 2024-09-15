@@ -16,8 +16,8 @@ h2 {
     justify-content: center;
 }
 .slider {
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
     overflow: hidden;
 }
 .imgs_slides {
@@ -47,7 +47,7 @@ h2 {
 }
 .navigation {
     width: 100%;
-    margin-top: -6.2vh;
+    margin-top: -7vh;
     display: flex;
     justify-content: right;
     gap: 0.5rem;
@@ -55,7 +55,7 @@ h2 {
 @media(max-width: 760px) {
     .navigation {
         justify-content: center;
-        margin-top: -12.5vh;
+        margin-top: -15vh;
     }
 }
 label {
