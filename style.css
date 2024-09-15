@@ -2,7 +2,7 @@
     box-sizing: border-box;
   }
 body {
-    margin: 0;
+    margin-top: 2rem;
 }
 h2 {
     font: 400 1em / 1.1 "Georgia", sans-serif;
@@ -13,22 +13,18 @@ h2 {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
-
 .slider {
-    width: 85%;
-    height: 70%;
+    width: 80%;
+    height: 80%;
     overflow: hidden;
 }
-
 .imgs_slides {
     width: 400%;
     height: 100%;
     display: flex;
 }
-
-.imgs_slides input {
+.slider input {
     display: none;
 }
 .slide {
@@ -41,32 +37,49 @@ h2 {
 }
 .navigation {
     width: 100%;
-    margin-top: -40px;
+    margin-top: -2.3rem;
     display: flex;
     justify-content: right;
+    gap: 1.5rem;
 }
 .navigation-btn {
-    border: 2px solid #de6a23;
-    padding: 5px;
-    border-radius: 10px;
+    border: 0.125rem solid blue;
+    background-color: blue;
+    border-radius: 0.625rem;
+    width: 0.75rem; 
+    height: 0.75rem;
     cursor: pointer;
+    outline-offset: -5px; 
     transition: 0.5s;
+    
 }
-.navigation-btn:not(:last-child) {
-    margin-right: 20px;
+.navigation-btn:hover {   
+    border-color: black;
+    background-color: black;
 }
-.navigation-btn:hover {
-    background: #de6a23;
-}
-#radio1:checked~.first {
+#radio1:checked~.imgs_slides .slide:nth-of-type(1) {
     margin-left: 0;
 }
-#radio2:checked~.first {
+#radio2:checked~.imgs_slides .slide:nth-of-type(1) {
     margin-left: -25%;
 }
-#radio3:checked~.first {
+#radio3:checked~.imgs_slides .slide:nth-of-type(1) {
     margin-left: -50%;
 }
-#radio4:checked~.first {
+#radio4:checked~.imgs_slides .slide:nth-of-type(1) {
     margin-left: -75%;
+}
+#radio1:checked ~ .navigation .navigation-btn:nth-of-type(1),
+#radio2:checked ~ .navigation .navigation-btn:nth-of-type(2),
+#radio3:checked ~ .navigation .navigation-btn:nth-of-type(3),
+#radio4:checked ~ .navigation .navigation-btn:nth-of-type(4) {
+    border-color: blue;
+    background-color: white;
+}
+#radio1:checked:hover ~ .navigation .navigation-btn:nth-of-type(1),
+#radio2:checked:hover ~ .navigation .navigation-btn:nth-of-type(2),
+#radio3:checked:hover ~ .navigation .navigation-btn:nth-of-type(3),
+#radio4:checked:hover ~ .navigation .navigation-btn:nth-of-type(4) {
+    border-color: black;
+    background-color: white;
 }
